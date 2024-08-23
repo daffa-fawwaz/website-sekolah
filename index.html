@@ -77,9 +77,13 @@
           </svg>
         </div>
         <div class="absolute left-2 mt-1">
-          <input type="checkbox" class="peer sr-only opacity-0" id="toggle" />
+          <input
+            type="checkbox"
+            class="peer sr-only opacity-0"
+            id="toggle-mobile"
+          />
           <label
-            for="toggle"
+            for="toggle-mobile"
             class="relative flex h-6 w-11 cursor-pointer items-center rounded-full bg-gray-400 px-0.5 outline-gray-400 transition-colors before:h-5 before:w-5 before:rounded-full before:bg-white before:shadow before:transition-transform before:duration-300 peer-checked:bg-blue-600 peer-checked:before:translate-x-full peer-focus-visible:outline peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gray-400 peer-checked:peer-focus-visible:outline-blue-700"
           >
             <span class="sr-only">Enable</span>
@@ -102,7 +106,6 @@
     <div class="h-16"></div>
 
     <!-- HOME -->
-
     <section
       class="w-full h-screen flex justify-center items-center md:bg-none bg-[url('/image/bg-home.png')] bg-cover bg-center bg-no-repeat"
     >
@@ -192,57 +195,107 @@
       </div>
     </section>
 
-    <section class="w-full mt-5">
+    <!-- WHY -->
+    <section class="w-full mt-5 mb-7">
       <div class="container mx-auto p-4 flex flex-col">
         <div class="flex flex-col items-center">
           <h3
-            class="text-xl md:text-4xl lg:text-6xl md:w-[537px] font-extrabold text-center text-slate-800"
+            class="text-xl md:text-4xl md:w-[537px] font-extrabold text-center text-slate-800"
           >
             Kenapa Harus
             <span class="text-[#362FD9]">HSI - IDN</span> PURWOREJO?
           </h3>
-          <p class="w-[252px] text-xs text-center text-slate-700 mt-3">
+          <p
+            class="w-[200px] sm:w-[252px] md:w-[552px] text-xs md:text-sm lg:text-lg lg:mt-10 text-center text-slate-700 mt-3"
+          >
             Alasan kenapa harus memilih untuk bergabung dengan SMA TI HSI - IDN
             PURWOREJO.
           </p>
         </div>
-        <div class="flex flex-wrap items-center justify-center mt-5 gap-6">
-          <div class="shadow-xl p-4 flex flex-col items-center rounded-lg">
+        <div
+          class="flex flex-wrap items-center justify-center mt-8 lg:mt-12 gap-6 lg:gap-14"
+        >
+          <div
+            class="shadow-xl px-4 py-6 flex flex-col items-center rounded-lg bg-gray-50"
+          >
             <div>
               <img src="./image/fasilitas.png" alt="" />
             </div>
-            <h4 class="text-sm mt-3 font-semibold">Fasilitas Lengkap</h4>
-            <p class="text-xs text-center w-[152px] mt-1">
+            <h4 class="text-sm text-slate-800 mt-3 md:mt-5 font-semibold">
+              Fasilitas Lengkap
+            </h4>
+            <p
+              class="text-xs text-slate-700 text-center w-[152px] mt-1 md:mt-3"
+            >
               Penunjang belajar dengan kualitas terbaik
             </p>
           </div>
-          <div class="shadow-xl p-4 flex flex-col items-center rounded-lg">
+          <div
+            class="shadow-xl px-4 py-6 flex flex-col items-center rounded-lg bg-gray-50"
+          >
             <div>
-              <img src="./image/fasilitas.png" alt="" />
+              <img src="./image/lingkungan.png" alt="" />
             </div>
-            <h4 class="text-sm mt-3 font-semibold">Fasilitas Lengkap</h4>
-            <p class="text-xs text-center w-[152px] mt-1">
-              Penunjang belajar dengan kualitas terbaik
+            <h4 class="text-sm text-slate-800 mt-3 md:mt-5 font-semibold">
+              Lingkungan Nyaman
+            </h4>
+            <p
+              class="text-xs text-slate-700 text-center w-[152px] mt-1 md:mt-3"
+            >
+              Berada di lingkungan yang nyaman dan asri
             </p>
           </div>
-          <div class="shadow-xl p-4 flex flex-col items-center rounded-lg">
+          <div
+            class="shadow-xl px-4 py-6 flex flex-col items-center rounded-lg bg-gray-50"
+          >
             <div>
-              <img src="./image/fasilitas.png" alt="" />
+              <img src="./image/pengajar.png" alt="" />
             </div>
-            <h4 class="text-sm mt-3 font-semibold">Fasilitas Lengkap</h4>
-            <p class="text-xs text-center w-[152px] mt-1">
-              Penunjang belajar dengan kualitas terbaik
+            <h4 class="text-sm text-slate-800 mt-3 md:mt-5 font-semibold">
+              Pengajar Kompeten
+            </h4>
+            <p
+              class="text-xs text-slate-700 text-center w-[152px] mt-1 md:mt-3"
+            >
+              Guru terbaik dengan pengalaman
             </p>
           </div>
-          <div class="shadow-xl p-4 flex flex-col items-center rounded-lg">
+          <div
+            class="shadow-xl px-4 py-6 flex flex-col items-center rounded-lg bg-gray-50"
+          >
             <div>
-              <img src="./image/fasilitas.png" alt="" />
+              <img src="./image/kerjasama.png" alt="" />
             </div>
-            <h4 class="text-sm mt-3 font-semibold">Fasilitas Lengkap</h4>
-            <p class="text-xs text-center w-[152px] mt-1">
-              Penunjang belajar dengan kualitas terbaik
+            <h4 class="text-sm text-slate-800 mt-3 md:mt-5 font-semibold">
+              Kerja Sama Luas
+            </h4>
+            <p
+              class="text-xs text-slate-700 text-center w-[152px] mt-1 md:mt-3"
+            >
+              Dapat kesempatan kerja yang lebih terjamin
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="w-full mt-5">
+      <div class="container mx-auto p-4 flex flex-col">
+        <div>
+          <img src="./image/about.png" alt="" />
+        </div>
+        <div class="flex flex-col">
+          <h4 class="text-sm">Sembutan Kepala Sekolah SMA IT HSI - IDN</h4>
+          <p>
+            sekolah adalah tempat mencetak penerus bangsa yang berkualitas dan
+            berprestasi di segala bidang yang dapat bersaing di dunia
+            internasional
+          </p>
+          <p>
+            dan Sekolah adalah tempat anak-anak mendapatkan dukungan untuk
+            melengkapi pembelajarannya di sekola
+          </p>
         </div>
       </div>
     </section>
