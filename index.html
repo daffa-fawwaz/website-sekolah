@@ -62,7 +62,7 @@
     <div class="flex flex-col">
       <div
         id="call-admin"
-        class="fixed bottom-8 lg:bottom-9 right-6 lg:right-9 w-40 h-9 bg-blue-500 rounded-xl flex justify-center items-center opacity-0"
+        class="fixed bottom-8 lg:bottom-9 right-6 lg:right-9 w-40 h-9 bg-blue-500 rounded-xl flex justify-center items-center opacity-0 transition-all duration-200 ease-in-out"
       >
         <p class="text-xs font-semibold text-white">Chat Admin Now !</p>
       </div>
@@ -76,7 +76,7 @@
 
     <!-- NAV MOBILE -->
     <aside
-      class="fixed w-full h-full -translate-x-full z-30 bg-[#00000081] transition-all duration-200 ease-in-out"
+      class="fixed w-full h-full -translate-x-full bg-[#00000081] transition-all duration-200 ease-in-out"
     >
       <div class="container w-72 h-full bg-white">
         <div class="flex flex-col p-2 relative">
@@ -129,7 +129,7 @@
 
     <!-- HOME -->
     <section
-      class="w-full h-screen flex justify-center items-center md:bg-none bg-[url('/image/bg-home.png')] bg-cover bg-center bg-no-repeat"
+      class="w-full h-screen flex justify-center items-center md:bg-none bg-[url('./../image/bg-home.png')] bg-cover bg-center bg-no-repeat"
     >
       <div
         class="container mx-auto p-4 flex flex-col md:flex-row-reverse md:items-center lg:justify-evenly"
@@ -164,8 +164,9 @@
           <h3
             class="text-xl md:text-4xl lg:text-6xl font-extrabold text-gray-100 text-center md:text-left md:text-slate-800"
           >
-            SMA IT HSI -
-            <span class="text-gray-100 md:text-[#362FD9]">IDN</span> PURWOREJO
+            SMA IT
+            <span class="text-gray-100 md:text-[#362FD9]">HSI - IDN</span>
+            PURWOREJO
           </h3>
           <p
             class="text-[10px] lg:text-lg text-center md:text-left mt-3 text-white md:text-slate-700"
@@ -218,7 +219,7 @@
     </section>
 
     <!-- WHY -->
-    <section class="w-full mt-5 mb-7">
+    <section class="w-full mt-5 mb-16">
       <div class="container mx-auto p-4 flex flex-col">
         <div class="flex flex-col items-center">
           <h3
@@ -238,7 +239,7 @@
           class="flex flex-wrap items-center justify-center mt-8 lg:mt-12 gap-6 lg:gap-14"
         >
           <div
-            class="shadow-xl px-4 py-6 flex flex-col items-center rounded-lg bg-gray-50"
+            class="drop-shadow-xl px-4 py-6 flex flex-col items-center rounded-lg bg-white"
           >
             <div>
               <img src="./image/fasilitas.png" alt="" />
@@ -253,7 +254,7 @@
             </p>
           </div>
           <div
-            class="shadow-xl px-4 py-6 flex flex-col items-center rounded-lg bg-gray-50"
+            class="drop-shadow-xl px-4 py-6 flex flex-col items-center rounded-lg bg-white"
           >
             <div>
               <img src="./image/lingkungan.png" alt="" />
@@ -268,7 +269,7 @@
             </p>
           </div>
           <div
-            class="shadow-xl px-4 py-6 flex flex-col items-center rounded-lg bg-gray-50"
+            class="drop-shadow-xl px-4 py-6 flex flex-col items-center rounded-lg bg-white"
           >
             <div>
               <img src="./image/pengajar.png" alt="" />
@@ -283,7 +284,7 @@
             </p>
           </div>
           <div
-            class="shadow-xl px-4 py-6 flex flex-col items-center rounded-lg bg-gray-50"
+            class="drop-shadow-xl px-4 py-6 flex flex-col items-center rounded-lg bg-white"
           >
             <div>
               <img src="./image/kerjasama.png" alt="" />
@@ -317,7 +318,9 @@
             <img src="./image/about.png" alt="" />
           </div>
           <div class="flex flex-col md:w-[520px] lg:gap-5 mt-5">
-            <h4 class="text-xl lg:text-3xl font-semibold md:font-bold">
+            <h4
+              class="text-xl lg:text-3xl font-semibold text-slate-700 md:font-bold"
+            >
               Sambutan Kepala Sekolah SMA IT HSI - IDN
             </h4>
             <p class="text-xs lg:text-lg mt-5 text-slate-700">
@@ -327,13 +330,339 @@
             </p>
             <p class="text-xs lg:text-lg mt-2 text-slate-700">
               dan Sekolah adalah tempat anak-anak mendapatkan dukungan untuk
-              melengkapi pembelajarannya di sekola
+              melengkapi pembelajarannya di sekolah
             </p>
             <button
               class="md:mx-0 bg-[#362FD9] text-white w-20 h-6 lg:w-[147px] lg:h-[48px] mt-6 md:mt-8 rounded-full shadow-xl"
             >
               <a class="text-xs lg:text-sm" href="">Video</a>
             </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JURUSAN -->
+    <section class="w-full mt-16">
+      <div class="container mx-auto p-4 flex flex-col items-center">
+        <div class="flex flex-col items-center">
+          <h3
+            class="text-xl text-center md:text-3xl md:w-[537px] font-bold text-slate-800"
+          >
+            Jurusan Di SMA IT
+            <span class="text-[#362FD9]">HSI - IDN</span> PURWOREJO
+          </h3>
+          <p class="text-xs lg:text-lg text-slate-700 mt-5">
+            Pilihan program keahlian di SMA IT HSI - IDN PURWOREJO.
+          </p>
+        </div>
+        <div
+          class="flex flex-wrap gap-4 mt-7 justify-center md:grid md:grid-cols-3 lg:gap-x-10"
+        >
+          <div
+            class="flex flex-col w-[170px] lg:w-[200px] lg:h-[190px] bg-[#362FD9] p-4 rounded-lg"
+          >
+            <div
+              class="w-[43px] h-[43px] bg-white flex justify-center items-center"
+            >
+              <img src="./image/tkj.png" alt="" />
+            </div>
+            <p
+              class="text-sm lg:text-lg font-medium lg:font-semibold text-white mt-3 lg:mt-5"
+            >
+              Teknik Komputer Dan Jaringan
+            </p>
+            <p class="text-xs font-thin text-white mt-3">Detail</p>
+          </div>
+          <div
+            class="flex flex-col w-[170px] lg:w-[200px] lg:h-[190px] bg-[#362FD9] p-4 rounded-lg"
+          >
+            <div
+              class="w-[43px] h-[43px] bg-white flex justify-center items-center"
+            >
+              <img src="./image/rpl.png" alt="" />
+            </div>
+            <p
+              class="text-sm lg:text-lg font-medium lg:font-semibold text-white mt-3 lg:mt-5"
+            >
+              Rekayasa Perangkat Lunak
+            </p>
+            <p class="text-xs font-thin text-white mt-3">Detail</p>
+          </div>
+          <div
+            class="flex flex-col w-[170px] lg:w-[200px] lg:h-[190px] bg-[#362FD9] p-4 rounded-lg"
+          >
+            <div
+              class="w-[43px] h-[43px] bg-white flex justify-center items-center"
+            >
+              <img src="./image/audio.png" alt="" />
+            </div>
+            <p
+              class="text-sm lg:text-lg font-medium lg:font-semibold text-white mt-3 lg:mt-5"
+            >
+              Photo Dan Videography
+            </p>
+            <p class="text-xs font-thin text-white mt-3">Detail</p>
+          </div>
+          <div
+            class="flex flex-col w-[170px] lg:w-[200px] lg:h-[190px] bg-[#362FD9] p-4 rounded-lg"
+          >
+            <div
+              class="w-[43px] h-[43px] bg-white flex justify-center items-center"
+            >
+              <img src="./image/desain.png" alt="" />
+            </div>
+            <p
+              class="text-sm lg:text-lg font-medium lg:font-semibold text-white mt-3 lg:mt-5"
+            >
+              Desain Komunikasi Visual
+            </p>
+            <p class="text-xs font-thin text-white mt-3">Detail</p>
+          </div>
+          <div
+            class="flex flex-col w-[170px] lg:w-[200px] lg:h-[190px] bg-[#362FD9] p-4 rounded-lg"
+          >
+            <div
+              class="w-[43px] h-[43px] bg-white flex justify-center items-center"
+            >
+              <img src="./image/language.png" alt="" />
+            </div>
+            <p
+              class="text-sm lg:text-lg font-medium lg:font-semibold text-white mt-3 lg:mt-5"
+            >
+              Pendalaman Bahasa
+            </p>
+            <p class="text-xs font-thin text-white mt-3">Detail</p>
+          </div>
+          <div
+            class="flex flex-col w-[170px] lg:w-[200px] lg:h-[190px] bg-[#362FD9] p-4 rounded-lg"
+          >
+            <div
+              class="w-[43px] h-[43px] bg-white flex justify-center items-center"
+            >
+              <img src="./image/robotic.png" alt="" />
+            </div>
+            <p
+              class="text-sm lg:text-lg font-medium lg:font-semibold text-white mt-3 lg:mt-5"
+            >
+              Pembelajaran Robotic
+            </p>
+            <p class="text-xs font-thin text-white mt-3">Detail</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EKSKUL -->
+    <section class="w-full mt-16 bg-[#F0EFFF]">
+      <div class="container mx-auto p-4 flex flex-col items-center pb-10">
+        <div class="flex flex-col items-center mt-10">
+          <h3
+            class="text-xl text-center md:text-3xl md:w-[537px] font-bold text-slate-800"
+          >
+            Ekstrakulikuler Di SMA IT
+            <span class="text-[#362FD9]">HSI - IDN</span> PURWOREJO
+          </h3>
+          <p class="text-xs lg:text-lg text-slate-700 mt-5">
+            Pilihan Ekstrakulikuler di SMA IT HSI - IDN PURWOREJO
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center mt-5 gap-4">
+          <div
+            class="flex flex-col w-[185px] h-[170px] gap-2 bg-white p-4 rounded-lg shadow-xl"
+          >
+            <div>
+              <img src="./image/pramuka-logohd-38028 1.png" alt="" />
+            </div>
+            <p class="font-semibold w-[128px] text-slate-800">
+              Praja Muda Karana
+            </p>
+            <p class="text-xs text-slate-700">
+              Pertama kali dibentuk team tahun 2002
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[185px] h-[170px] gap-2 bg-white p-4 rounded-lg shadow-xl"
+          >
+            <div>
+              <img src="./image/Pmi 1.png" alt="" />
+            </div>
+            <p class="font-semibold w-[128px] text-slate-800">
+              Palang Merah Remaja
+            </p>
+            <p class="text-xs text-slate-700">
+              Pertama kali dibentuk team tahun 2003
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[185px] h-[170px] gap-2 bg-white p-4 rounded-lg shadow-xl"
+          >
+            <div class="w-[78px] h-[74px]">
+              <img src="./image/mapala.png" alt="" />
+            </div>
+            <p class="font-semibold w-[128px] text-slate-800">Pecinta Alam</p>
+            <p class="text-xs text-slate-700">
+              Pertama kali dibentuk team tahun 2002
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[185px] h-[170px] gap-2 bg-white p-4 rounded-lg shadow-xl"
+          >
+            <div>
+              <img src="./image/sinematography.png" alt="" />
+            </div>
+            <p class="font-semibold w-[128px] text-slate-800">Sinematografi</p>
+            <p class="text-xs text-slate-700">
+              Pertama kali dibentuk team tahun 2016
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full mt-16">
+      <div class="container mx-auto p-4 flex flex-col">
+        <div class="flex flex-col items-center">
+          <h3
+            class="text-xl text-center md:text-3xl md:w-[537px] font-bold text-slate-800"
+          >
+            Berita Terbaru Di SMA IT
+            <span class="text-[#362FD9]">HSI - IDN</span> PURWOREJO
+          </h3>
+          <p class="text-xs lg:text-lg text-slate-700 mt-5">
+            Berita Terbaru Tentang SMA IT HSI - IDN PURWOREJO
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4 mt-5">
+          <div
+            class="w-[187px] h-[232px] lg:w-[287px] lg:h-[332px] flex flex-col bg-gray-50 rounded-lg shadow-xl"
+          >
+            <div class="w-full"><img src="./image/photo1.png" alt="" /></div>
+            <div class="w-full px-2">
+              <p class="text-xs lg:text-lg text-slate-700 mt-5">
+                13 December 2023
+              </p>
+              <p class="font-semibold text-sm lg:text-lg mt-2">
+                Pendaftaran SMA IT HSI - IDN Telah Dibuka !
+              </p>
+              <p class="text-xs lg:text-lg text-slate-700 mt-2">
+                By Admin SMA IT
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[187px] h-[232px] lg:w-[287px] lg:h-[332px] flex flex-col bg-gray-50 rounded-lg shadow-xl overflow-hidden"
+          >
+            <div>
+              <img src="./image/photo2 1.png" alt="" />
+            </div>
+            <div class="w-full px-2">
+              <p class="text-xs lg:text-lg text-slate-700 mt-5">
+                13 December 2023
+              </p>
+              <p class="font-semibold text-sm mt-2 lg:text-lg">
+                Pendaftaran SMA IT HSI - IDN Telah Dibuka !
+              </p>
+              <p class="text-xs lg:text-lg text-slate-700 mt-2">
+                By Admin SMA IT
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[187px] h-[232px] lg:w-[287px] lg:h-[332px] flex flex-col bg-gray-50 rounded-lg shadow-xl overflow-hidden"
+          >
+            <div class="w-full"><img src="./image/photo3 1.png" alt="" /></div>
+            <div class="w-full px-2">
+              <p class="text-xs lg:text-lg text-slate-700 mt-5">
+                13 December 2023
+              </p>
+              <p class="font-semibold text-sm mt-2 lg:text-lg">
+                Pendaftaran SMA IT HSI - IDN Telah Dibuka !
+              </p>
+              <p class="text-xs lg:text-lg text-slate-700 mt-2">
+                By Admin SMA IT
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[187px] h-[232px] lg:w-[287px] lg:h-[332px] flex flex-col bg-gray-50 rounded-lg shadow-xl"
+          >
+            <div class="w-full"><img src="./image/photo4 1.png" alt="" /></div>
+            <div class="w-full px-2">
+              <p class="text-xs lg:text-lg text-slate-700 mt-5">
+                13 December 2023
+              </p>
+              <p class="font-semibold text-sm mt-2 lg:text-lg">
+                Pendaftaran SMA IT HSI - IDN Telah Dibuka !
+              </p>
+              <p class="text-xs lg:text-lg text-slate-700 mt-2">
+                By Admin SMA IT
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[187px] h-[232px] lg:w-[287px] lg:h-[332px] flex flex-col bg-gray-50 rounded-lg shadow-xl"
+          >
+            <div class="w-full"><img src="./image/photo6.png" alt="" /></div>
+            <div class="w-full px-2">
+              <p class="text-xs lg:text-lg text-slate-700 mt-5">
+                13 December 2023
+              </p>
+              <p class="font-semibold text-sm mt-2 lg:text-lg">
+                Pendaftaran SMA IT HSI - IDN Telah Dibuka !
+              </p>
+              <p class="text-xs lg:text-lg text-slate-700 mt-2">
+                By Admin SMA IT
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[187px] h-[232px] lg:w-[287px] lg:h-[332px] flex flex-col bg-gray-50 rounded-lg shadow-xl"
+          >
+            <div class="w-full"><img src="./image/photo7.png" alt="" /></div>
+            <div class="w-full px-2">
+              <p class="text-xs lg:text-lg text-slate-700 mt-5">
+                13 December 2023
+              </p>
+              <p class="font-semibold text-sm mt-2 lg:text-lg">
+                Pendaftaran SMA IT HSI - IDN Telah Dibuka !
+              </p>
+              <p class="text-xs lg:text-lg text-slate-700 mt-2">
+                By Admin SMA IT
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[187px] h-[232px] lg:w-[287px] lg:h-[332px] flex flex-col bg-gray-50 rounded-lg shadow-xl"
+          >
+            <div class="w-full"><img src="./image/photo8.png" alt="" /></div>
+            <div class="w-full px-2">
+              <p class="text-xs lg:text-lg text-slate-700 mt-5">
+                13 December 2023
+              </p>
+              <p class="font-semibold text-sm mt-2 lg:text-lg">
+                Pendaftaran SMA IT HSI - IDN Telah Dibuka !
+              </p>
+              <p class="text-xs lg:text-lg text-slate-700 mt-2">
+                By Admin SMA IT
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[187px] h-[232px] lg:w-[287px] lg:h-[332px] flex flex-col bg-gray-50 rounded-lg shadow-xl"
+          >
+            <div class="w-full"><img src="./image/photo1.png" alt="" /></div>
+            <div class="w-full px-2">
+              <p class="text-xs lg:text-lg text-slate-700 mt-5">
+                13 December 2023
+              </p>
+              <p class="font-semibold text-sm mt-2 lg:text-lg">
+                Pendaftaran SMA IT HSI - IDN Telah Dibuka !
+              </p>
+              <p class="text-xs lg:text-lg text-slate-700 mt-2">
+                By Admin SMA IT
+              </p>
+            </div>
           </div>
         </div>
       </div>
