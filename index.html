@@ -17,8 +17,8 @@
       }
     </style>
   </head>
-  <body>
-    <nav class="w-full fixed bg-white">
+  <body class="dark:bg-gray-800">
+    <nav class="w-full fixed z-30 bg-white">
       <div class="container mx-auto p-4 flex justify-between items-center">
         <div class="w-12 h-12">
           <img src="./image/logo-idn 1.png" alt="" />
@@ -62,13 +62,13 @@
     <div class="flex flex-col">
       <div
         id="call-admin"
-        class="fixed bottom-8 lg:bottom-9 right-6 lg:right-9 w-40 h-9 bg-blue-500 rounded-xl flex justify-center items-center opacity-0 transition-all duration-200 ease-in-out"
+        class="fixed z-30 bottom-8 lg:bottom-9 right-6 lg:right-9 w-40 h-9 bg-blue-500 rounded-xl flex justify-center items-center opacity-0 transition-all duration-200 ease-in-out"
       >
         <p class="text-xs font-semibold text-white">Chat Admin Now !</p>
       </div>
       <div
         id="whatsaap"
-        class="fixed bottom-5 right-5 w-7 h-7 lg:w-10 lg:h-10 cursor-pointer"
+        class="fixed z-40 bottom-5 right-5 w-7 h-7 lg:w-10 lg:h-10 cursor-pointer"
       >
         <img src="./image/logos_whatsapp-icon.png" alt="" />
       </div>
@@ -76,7 +76,7 @@
 
     <!-- NAV MOBILE -->
     <aside
-      class="fixed w-full h-full -translate-x-full bg-[#00000081] transition-all duration-200 ease-in-out"
+      class="fixed z-50 w-full h-full -translate-x-full bg-[#00000081] transition-all duration-200 ease-in-out"
     >
       <div class="container w-72 h-full bg-white">
         <div class="flex flex-col p-2 relative">
@@ -160,7 +160,7 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col mt-16 md:mt-10 md:w-[533px]">
+        <div class="flex flex-col md:mt-10 md:w-[533px]">
           <h3
             class="text-xl md:text-4xl lg:text-6xl font-extrabold text-gray-100 text-center md:text-left md:text-slate-800"
           >
@@ -219,7 +219,7 @@
     </section>
 
     <!-- WHY -->
-    <section class="w-full mt-5 mb-16">
+    <section class="w-full mt-5 mb-28">
       <div class="container mx-auto p-4 flex flex-col">
         <div class="flex flex-col items-center">
           <h3
@@ -455,7 +455,7 @@
 
     <!-- EKSKUL -->
     <section class="w-full mt-16 bg-[#F0EFFF]">
-      <div class="container mx-auto p-4 flex flex-col items-center pb-10">
+      <div class="container mx-auto p-4 flex flex-col items-center pb-16">
         <div class="flex flex-col items-center mt-10">
           <h3
             class="text-xl text-center md:text-3xl md:w-[537px] font-bold text-slate-800"
@@ -520,8 +520,9 @@
       </div>
     </section>
 
+    <!-- BERITA -->
     <section class="w-full mt-16">
-      <div class="container mx-auto p-4 flex flex-col">
+      <div class="container mx-auto p-4 flex flex-col items-center">
         <div class="flex flex-col items-center">
           <h3
             class="text-xl text-center md:text-3xl md:w-[537px] font-bold text-slate-800"
@@ -529,139 +530,155 @@
             Berita Terbaru Di SMA IT
             <span class="text-[#362FD9]">HSI - IDN</span> PURWOREJO
           </h3>
-          <p class="text-xs lg:text-lg text-slate-700 mt-5">
+          <p class="text-xs lg:text-lg text-slate-700 mt-10">
             Berita Terbaru Tentang SMA IT HSI - IDN PURWOREJO
           </p>
         </div>
-        <div class="flex flex-wrap justify-center gap-4 mt-5">
+        <div class="flex flex-wrap justify-center gap-4 mt-8">
           <div
-            class="w-[187px] h-[232px] lg:w-[287px] lg:h-[332px] flex flex-col bg-gray-50 rounded-lg shadow-xl"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden"
           >
             <div class="w-full"><img src="./image/photo1.png" alt="" /></div>
             <div class="w-full px-2">
-              <p class="text-xs lg:text-lg text-slate-700 mt-5">
-                13 December 2023
-              </p>
+              <p class="text-xs text-slate-700 mt-5">13 December 2023</p>
               <p class="font-semibold text-sm lg:text-lg mt-2">
                 Pendaftaran SMA IT HSI - IDN Telah Dibuka !
               </p>
-              <p class="text-xs lg:text-lg text-slate-700 mt-2">
-                By Admin SMA IT
-              </p>
+              <p class="text-xs text-slate-700 mt-2">By Admin SMA IT</p>
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[287px] lg:h-[332px] flex flex-col bg-gray-50 rounded-lg shadow-xl overflow-hidden"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden"
           >
             <div>
               <img src="./image/photo2 1.png" alt="" />
             </div>
             <div class="w-full px-2">
-              <p class="text-xs lg:text-lg text-slate-700 mt-5">
-                13 December 2023
-              </p>
-              <p class="font-semibold text-sm mt-2 lg:text-lg">
+              <p class="text-xs text-slate-700 mt-5">13 December 2023</p>
+              <p class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg">
                 Pendaftaran SMA IT HSI - IDN Telah Dibuka !
               </p>
-              <p class="text-xs lg:text-lg text-slate-700 mt-2">
-                By Admin SMA IT
-              </p>
+              <p class="text-xs text-slate-700 mt-2">By Admin SMA IT</p>
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[287px] lg:h-[332px] flex flex-col bg-gray-50 rounded-lg shadow-xl overflow-hidden"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden"
           >
             <div class="w-full"><img src="./image/photo3 1.png" alt="" /></div>
             <div class="w-full px-2">
-              <p class="text-xs lg:text-lg text-slate-700 mt-5">
-                13 December 2023
-              </p>
-              <p class="font-semibold text-sm mt-2 lg:text-lg">
+              <p class="text-xs text-slate-700 mt-5">13 December 2023</p>
+              <p class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg">
                 Pendaftaran SMA IT HSI - IDN Telah Dibuka !
               </p>
-              <p class="text-xs lg:text-lg text-slate-700 mt-2">
-                By Admin SMA IT
-              </p>
+              <p class="text-xs text-slate-700 mt-2">By Admin SMA IT</p>
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[287px] lg:h-[332px] flex flex-col bg-gray-50 rounded-lg shadow-xl"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden"
           >
             <div class="w-full"><img src="./image/photo4 1.png" alt="" /></div>
             <div class="w-full px-2">
-              <p class="text-xs lg:text-lg text-slate-700 mt-5">
-                13 December 2023
-              </p>
-              <p class="font-semibold text-sm mt-2 lg:text-lg">
+              <p class="text-xs text-slate-700 mt-5">13 December 2023</p>
+              <p class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg">
                 Pendaftaran SMA IT HSI - IDN Telah Dibuka !
               </p>
-              <p class="text-xs lg:text-lg text-slate-700 mt-2">
-                By Admin SMA IT
-              </p>
+              <p class="text-xs text-slate-700 mt-2">By Admin SMA IT</p>
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[287px] lg:h-[332px] flex flex-col bg-gray-50 rounded-lg shadow-xl"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden"
           >
             <div class="w-full"><img src="./image/photo6.png" alt="" /></div>
             <div class="w-full px-2">
-              <p class="text-xs lg:text-lg text-slate-700 mt-5">
-                13 December 2023
-              </p>
-              <p class="font-semibold text-sm mt-2 lg:text-lg">
+              <p class="text-xs text-slate-700 mt-5">13 December 2023</p>
+              <p class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg">
                 Pendaftaran SMA IT HSI - IDN Telah Dibuka !
               </p>
-              <p class="text-xs lg:text-lg text-slate-700 mt-2">
-                By Admin SMA IT
-              </p>
+              <p class="text-xs text-slate-700 mt-2">By Admin SMA IT</p>
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[287px] lg:h-[332px] flex flex-col bg-gray-50 rounded-lg shadow-xl"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden"
           >
             <div class="w-full"><img src="./image/photo7.png" alt="" /></div>
             <div class="w-full px-2">
-              <p class="text-xs lg:text-lg text-slate-700 mt-5">
-                13 December 2023
-              </p>
-              <p class="font-semibold text-sm mt-2 lg:text-lg">
+              <p class="text-xs text-slate-700 mt-5">13 December 2023</p>
+              <p class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg">
                 Pendaftaran SMA IT HSI - IDN Telah Dibuka !
               </p>
-              <p class="text-xs lg:text-lg text-slate-700 mt-2">
-                By Admin SMA IT
-              </p>
+              <p class="text-xs text-slate-700 mt-2">By Admin SMA IT</p>
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[287px] lg:h-[332px] flex flex-col bg-gray-50 rounded-lg shadow-xl"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden"
           >
             <div class="w-full"><img src="./image/photo8.png" alt="" /></div>
             <div class="w-full px-2">
-              <p class="text-xs lg:text-lg text-slate-700 mt-5">
-                13 December 2023
-              </p>
-              <p class="font-semibold text-sm mt-2 lg:text-lg">
+              <p class="text-xs text-slate-700 mt-5">13 December 2023</p>
+              <p class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg">
                 Pendaftaran SMA IT HSI - IDN Telah Dibuka !
               </p>
-              <p class="text-xs lg:text-lg text-slate-700 mt-2">
-                By Admin SMA IT
-              </p>
+              <p class="text-xs text-slate-700 mt-2">By Admin SMA IT</p>
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[287px] lg:h-[332px] flex flex-col bg-gray-50 rounded-lg shadow-xl"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden"
           >
             <div class="w-full"><img src="./image/photo1.png" alt="" /></div>
             <div class="w-full px-2">
-              <p class="text-xs lg:text-lg text-slate-700 mt-5">
-                13 December 2023
-              </p>
-              <p class="font-semibold text-sm mt-2 lg:text-lg">
+              <p class="text-xs text-slate-700 mt-5">13 December 2023</p>
+              <p class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg">
                 Pendaftaran SMA IT HSI - IDN Telah Dibuka !
               </p>
-              <p class="text-xs lg:text-lg text-slate-700 mt-2">
-                By Admin SMA IT
+              <p class="text-xs text-slate-700 mt-2">By Admin SMA IT</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="mx-auto md:mx-0 bg-[#362FD9] text-white w-32 h-8 lg:w-[147px] lg:h-[48px] mt-6 md:mt-8 rounded-full shadow-xl"
+        >
+          <a class="text-xs lg:text-sm" href="">Semua Berita</a>
+        </button>
+      </div>
+    </section>
+
+    <!-- DOKUMENTASI -->
+    <section class="w-full mt-16 bg-[#362FD9]">
+      <div class="container flex flex-col mx-auto p-4 items-center">
+        <h3
+          class="text-xl text-center md:text-3xl md:w-[537px] font-bold text-white mt-10"
+        >
+          Foto Documentasi Kegiatan SMA IT HSI - IDN PURWOREJO
+        </h3>
+        <div class="flex flex-wrap justify-center gap-4">
+          <div
+            class="flex items-end w-[218px] h-[284px] bg-[url('./../image/doc1.png')] bg-center bg-cover bg-no-repeat"
+          >
+            <div class="h-[88px] p-4 w-full backdrop-blur bg-[#ffffff80]">
+              <p class="font-bold text-sm lg:text-lg">
+                Lomba Voli Air 17 Agustus
               </p>
+              <p class="text-xs w-[141px] mt-1">SMA IT HSI - IDN PURWOREJO</p>
+            </div>
+          </div>
+          <div
+            class="flex items-end w-[218px] h-[284px] bg-[url('./../image/doc1.png')] bg-center bg-cover bg-no-repeat"
+          >
+            <div class="h-[88px] p-4 w-full backdrop-blur bg-[#ffffff80]">
+              <p class="font-bold text-sm lg:text-lg">
+                Lomba Voli Air 17 Agustus
+              </p>
+              <p class="text-xs w-[141px] mt-1">SMA IT HSI - IDN PURWOREJO</p>
+            </div>
+          </div>
+          <div
+            class="flex items-end w-[218px] h-[284px] bg-[url('./../image/doc1.png')] bg-center bg-cover bg-no-repeat"
+          >
+            <div class="h-[88px] p-4 w-full backdrop-blur bg-[#ffffff80]">
+              <p class="font-bold text-sm lg:text-lg">
+                Lomba Voli Air 17 Agustus
+              </p>
+              <p class="text-xs w-[141px] mt-1">SMA IT HSI - IDN PURWOREJO</p>
             </div>
           </div>
         </div>
@@ -689,6 +706,29 @@
       wa.addEventListener("mouseleave", function () {
         callAdmin.classList.add("opacity-0");
         callAdmin.classList.remove("opacity-100");
+      });
+
+      var checkbox = document.querySelector("#toggle");
+      var checkboxMobile = document.querySelector("#toggle-mobile");
+
+      checkbox.addEventListener("click", function () {
+        if (checkbox.checked) {
+          document.documentElement.classList.add("dark");
+          localStorage.theme = "dark";
+        } else {
+          document.documentElement.classList.remove("dark");
+          localStorage.theme = "light";
+        }
+      });
+
+      checkboxMobile.addEventListener("click", function () {
+        if (checkboxMobile.checked) {
+          document.documentElement.classList.add("dark");
+          localStorage.theme = "dark";
+        } else {
+          document.documentElement.classList.remove("dark");
+          localStorage.theme = "light";
+        }
       });
     </script>
   </body>
