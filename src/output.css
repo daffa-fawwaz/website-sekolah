@@ -959,6 +959,10 @@ video {
   height: 2.25rem;
 }
 
+.h-\[157px\] {
+  height: 157px;
+}
+
 .h-\[170px\] {
   height: 170px;
 }
@@ -967,8 +971,8 @@ video {
   height: 232px;
 }
 
-.h-\[284px\] {
-  height: 284px;
+.h-\[290px\] {
+  height: 290px;
 }
 
 .h-\[42px\] {
@@ -983,8 +987,8 @@ video {
   height: 74px;
 }
 
-.h-\[88px\] {
-  height: 88px;
+.h-\[90px\] {
+  height: 90px;
 }
 
 .h-full {
@@ -1039,6 +1043,10 @@ video {
   width: 141px;
 }
 
+.w-\[145px\] {
+  width: 145px;
+}
+
 .w-\[152px\] {
   width: 152px;
 }
@@ -1065,6 +1073,10 @@ video {
 
 .w-\[218px\] {
   width: 218px;
+}
+
+.w-\[220px\] {
+  width: 220px;
 }
 
 .w-\[42px\] {
@@ -2161,6 +2173,14 @@ video {
   background-image: url('./../image/doc1.png');
 }
 
+.bg-\[url\(\'\.\/\.\.\/image\/doc2\.png\'\)\] {
+  background-image: url('./../image/doc2.png');
+}
+
+.bg-\[url\(\'\.\/\.\.\/image\/doc3\.png\'\)\] {
+  background-image: url('./../image/doc3.png');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2283,12 +2303,12 @@ video {
   padding: 0.5rem;
 }
 
-.p-4 {
-  padding: 1rem;
+.p-3 {
+  padding: 0.75rem;
 }
 
-.p-10 {
-  padding: 2.5rem;
+.p-4 {
+  padding: 1rem;
 }
 
 .px-0\.5 {
@@ -2329,6 +2349,10 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
 }
 
 .pb-16 {
@@ -2414,12 +2438,12 @@ video {
   line-height: 1rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.font-black {
+  font-weight: 900;
 }
 
-.font-extrabold {
-  font-weight: 800;
+.font-bold {
+  font-weight: 700;
 }
 
 .font-medium {
@@ -3260,6 +3284,10 @@ video {
     margin-top: 3rem;
   }
 
+  .lg\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .lg\:mt-5 {
     margin-top: 1.25rem;
   }
@@ -3280,12 +3308,20 @@ video {
     height: 2.5rem;
   }
 
+  .lg\:h-\[130px\] {
+    height: 130px;
+  }
+
   .lg\:h-\[190px\] {
     height: 190px;
   }
 
   .lg\:h-\[302px\] {
     height: 302px;
+  }
+
+  .lg\:h-\[384px\] {
+    height: 384px;
   }
 
   .lg\:h-\[48px\] {
@@ -3304,8 +3340,16 @@ video {
     width: 200px;
   }
 
+  .lg\:w-\[231px\] {
+    width: 231px;
+  }
+
   .lg\:w-\[257px\] {
     width: 257px;
+  }
+
+  .lg\:w-\[318px\] {
+    width: 318px;
   }
 
   .lg\:justify-between {
@@ -3322,6 +3366,10 @@ video {
 
   .lg\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .lg\:gap-6 {
+    gap: 1.5rem;
   }
 
   .lg\:gap-7 {
