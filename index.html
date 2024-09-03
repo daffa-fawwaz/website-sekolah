@@ -9,9 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>SMA IT HSI - IDN</title>
     <link href="./src/output.css" rel="stylesheet" />
+    <link href="./image/logo-idn 1.png" rel="icon" />
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
       * {
         font-family: poppins;
       }
@@ -25,13 +30,17 @@
         </div>
         <div class="hidden lg:block">
           <ul class="flex gap-9 text-slate-600 dark:text-slate-50">
-            <li><a href="">Beranda</a></li>
-            <li><a href="">Tentang kami</a></li>
-            <li><a href="">Program</a></li>
-            <li><a href="">Guru</a></li>
-            <li><a href="">Siswa</a></li>
-            <li><a href="">Berita</a></li>
-            <li><a href="">Fitur</a></li>
+            <li>
+              <a href="#home">Beranda</a>
+            </li>
+            <li>
+              <a href="#about">Tentang kami</a>
+            </li>
+            <li><a href="#jurusan">Jurusan</a></li>
+            <li><a href="#ekskul">Ekskul</a></li>
+            <li><a href="#berita">Berita</a></li>
+            <li><a href="#dokumentasi">Dokumentasi</a></li>
+            <li><a href="#alumni">Alumni</a></li>
           </ul>
         </div>
         <div
@@ -63,16 +72,37 @@
     </nav>
     <div class="flex flex-col">
       <div
+        id="qr-code"
+        class="bg-[#3B82F6] fixed z-30 bottom-8 lg:bottom-24 right-6 lg:right-6 w-[170px] h-[170px] p-4 flex flex-col items-center transition-all duration-700 ease-in-out opacity-0"
+      >
+        <div
+          class="w-[150px] h-[150px] fixed z-30 bottom-8 lg:bottom-[105px] right-6 lg:right-[33px]"
+        >
+          <img src="./image/qrcode.png" alt="" />
+        </div>
+        <div class="fixed z-30 bottom-8 lg:bottom-20 right-6 lg:right-11">
+          <img src="./image/ph_triangle-fill (1).png" alt="" />
+        </div>
+      </div>
+      <div
         id="call-admin"
-        class="fixed z-30 bottom-8 lg:bottom-9 right-6 lg:right-9 w-40 h-9 bg-blue-500 rounded-xl flex justify-center items-center opacity-0 transition-all duration-200 ease-in-out"
+        class="opacity-0 fixed z-30 bottom-8 lg:bottom-6 right-6 lg:right-[100px] w-40 h-9 bg-blue-500 rounded-xl flex justify-center items-center transition-all duration-200 ease-in-out"
       >
         <p class="text-xs font-semibold text-white">Chat Admin Now !</p>
+        <div class="fixed z-30 bottom-8 lg:bottom-8 right-6 lg:right-[84px]">
+          <img src="./image/ph_triangle-fright.png" alt="" />
+        </div>
       </div>
       <div
         id="whatsaap"
-        class="fixed z-40 bottom-5 right-5 w-7 h-7 lg:w-10 lg:h-10 cursor-pointer"
+        class="fixed z-40 bottom-11 lg:bottom-5 right-7 w-7 h-7 lg:w-14 lg:h-14 cursor-pointer"
       >
-        <img src="./image/logos_whatsapp-icon.png" alt="" />
+        <a
+          href="https://api.whatsapp.com/send/?phone=085895080043&text&type=phone_number&app_absent=0"
+          target="_blank"
+        >
+          <img src="./image/logos_whatsapp-icon.png" alt="" />
+        </a>
       </div>
     </div>
 
@@ -88,7 +118,8 @@
               width="32"
               height="32"
               viewBox="0 0 256 256"
-              class="fill-black dark:fill-white"            >
+              class="fill-black dark:fill-white"
+            >
               <path
                 d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
               ></path>
@@ -100,14 +131,19 @@
             </div>
           </div>
           <ul
-            class="mt-28 flex flex-col gap-10 text-left ml-5 text-slate-500 font-semibold dark:text-gray-200"
+            class="mt-28 flex flex-col gap-7 text-left ml-5 text-slate-500 font-semibold dark:text-gray-200"
           >
-            <li><a href="">Beranda</a></li>
-            <li><a href="">Tentang kami</a></li>
-            <li><a href="">Program</a></li>
-            <li><a href="">Guru</a></li>
-            <li><a href="">Siswa</a></li>
-            <li><a href="">Berita</a></li>
+            <li>
+              <a href="#home">Beranda</a>
+            </li>
+            <li>
+              <a href="#about">Tentang kami</a>
+            </li>
+            <li><a href="#jurusan">Jurusan</a></li>
+            <li><a href="#ekskul">Ekskul</a></li>
+            <li><a href="#berita">Berita</a></li>
+            <li><a href="#dokumentasi">Dokumentasi</a></li>
+            <li><a href="#alumni">Alumni</a></li>
             <li>
               <input
                 type="checkbox"
@@ -130,10 +166,11 @@
 
     <!-- HOME -->
     <section
-      class="w-full h-screen flex justify-center items-center md:bg-none bg-[url('./../image/bg-home.png')] bg-cover bg-center bg-no-repeat"
+      id="home"
+      class="w-full h-[500px] lg:h-screen flex justify-center items-center md:bg-none bg-[url('./../image/bg-home.png')] bg-cover bg-center bg-no-repeat"
     >
       <div
-        class="container mx-auto p-4 pb-10 flex flex-col md:flex-row-reverse md:items-center lg:justify-evenly"
+        class="container mx-auto p-4 flex flex-col md:flex-row-reverse md:items-center lg:justify-evenly"
       >
         <div class="flex -z-10 relative">
           <div
@@ -151,7 +188,11 @@
               </div>
             </div>
           </div>
-          <img class="hidden md:flex" src="./image/home.png" alt="" />
+          <img
+            class="hidden md:flex dark:boxShadow"
+            src="./image/home.png"
+            alt=""
+          />
           <div
             class="hidden w-[192px] bg-white px-4 py-2 md:block absolute md:bottom-14 lg:bottom-24 -left-7 shadow-md rounded-md"
           >
@@ -177,7 +218,7 @@
             internasional
           </p>
           <button
-            class="mx-auto md:mx-0 bg-[#362FD9] text-white w-20 h-6 lg:w-[147px] lg:h-[48px] mt-6 md:mt-8 rounded-full shadow-xl"
+            class="mx-auto md:mx-0 bg-[#362FD9] text-white w-24 h-10 lg:w-[147px] lg:h-[48px] mt-6 md:mt-8 rounded-full shadow-xl"
           >
             <a class="text-xs lg:text-sm" href="">Video</a>
           </button>
@@ -220,7 +261,7 @@
     </section>
 
     <!-- WHY -->
-    <section class="w-full mt-5 mb-28">
+    <section id="why" class="w-full mt-5 mb-28">
       <div class="container mx-auto p-4 flex flex-col">
         <div class="flex flex-col items-center">
           <h3
@@ -304,7 +345,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="w-full mt-20">
+    <section id="about" class="w-full mt-20">
       <div class="container mx-auto p-4 flex flex-col items-center gap-10">
         <h3
           class="text-xl md:text-4xl md:w-[537px] font-bold text-center text-slate-800 dark:text-gray-50"
@@ -338,7 +379,7 @@
               melengkapi pembelajarannya di sekolah
             </p>
             <button
-              class="md:mx-0 bg-[#362FD9] text-white w-20 h-6 lg:w-[147px] lg:h-[48px] mt-6 md:mt-8 rounded-full shadow-xl"
+              class="md:mx-0 bg-[#362FD9] text-white w-24 h-10 lg:w-[147px] lg:h-[48px] mt-6 md:mt-8 rounded-full shadow-xl"
             >
               <a class="text-xs lg:text-sm" href="">Video</a>
             </button>
@@ -348,7 +389,7 @@
     </section>
 
     <!-- JURUSAN -->
-    <section class="w-full mt-16">
+    <section id="jurusan" class="w-full mt-16">
       <div class="container mx-auto p-4 flex flex-col items-center">
         <div class="flex flex-col items-center">
           <h3
@@ -357,7 +398,9 @@
             Jurusan Di SMA IT
             <span class="text-[#362FD9]">HSI - IDN</span> PURWOREJO
           </h3>
-          <p class="text-xs lg:text-lg text-slate-700 mt-5 dark:text-gray-200">
+          <p
+            class="text-xs text-center lg:text-lg text-slate-700 mt-5 dark:text-gray-200"
+          >
             Pilihan program keahlian di SMA IT HSI - IDN PURWOREJO.
           </p>
         </div>
@@ -420,9 +463,9 @@
             <p
               class="text-sm lg:text-lg font-medium lg:font-semibold text-white mt-3 lg:mt-5"
             >
-              Desain Komunikasi Visual
+              Desain Multimedia
             </p>
-            <p class="text-xs font-thin text-white mt-3">Detail</p>
+            <p class="text-xs font-thin text-white mt-8 md:mt-3">Detail</p>
           </div>
           <div
             class="flex flex-col w-[170px] lg:w-[200px] lg:h-[190px] bg-[#362FD9] p-4 rounded-lg"
@@ -459,7 +502,7 @@
     </section>
 
     <!-- EKSKUL -->
-    <section class="w-full mt-16 bg-[#F0EFFF] dark:bg-gray-900">
+    <section id="ekskul" class="w-full mt-16 bg-[#F0EFFF] dark:bg-gray-900">
       <div class="container mx-auto p-4 flex flex-col items-center pb-16">
         <div class="flex flex-col items-center mt-10">
           <h3
@@ -468,7 +511,9 @@
             Ekstrakulikuler Di SMA IT
             <span class="text-[#362FD9]">HSI - IDN</span> PURWOREJO
           </h3>
-          <p class="text-xs lg:text-lg text-slate-700 mt-5 dark:text-gray-200">
+          <p
+            class="text-xs text-center lg:text-lg text-slate-700 mt-5 dark:text-gray-200"
+          >
             Pilihan Ekstrakulikuler di SMA IT HSI - IDN PURWOREJO
           </p>
         </div>
@@ -526,7 +571,7 @@
     </section>
 
     <!-- BERITA -->
-    <section class="w-full mt-16">
+    <section id="berita" class="w-full mt-16">
       <div class="container mx-auto p-4 flex flex-col items-center">
         <div class="flex flex-col items-center">
           <h3
@@ -541,101 +586,149 @@
         </div>
         <div class="flex flex-wrap justify-center gap-4 mt-8">
           <div
-            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
           >
             <div class="w-full"><img src="./image/photo1.png" alt="" /></div>
             <div class="w-full px-2">
-              <p class="text-xs text-slate-700 mt-5">13 December 2023</p>
-              <p class="font-semibold text-sm lg:text-lg mt-2">
+              <p class="text-xs text-slate-700 mt-5 dark:text-gray-50">
+                13 December 2023
+              </p>
+              <p
+                class="font-semibold text-sm lg:text-lg mt-2 dark:text-gray-200"
+              >
                 Pendaftaran SMA IT HSI - IDN Telah Dibuka !
               </p>
-              <p class="text-xs text-slate-700 mt-2">By Admin SMA IT</p>
+              <p class="text-xs text-slate-700 mt-2 dark:text-gray-50">
+                By Admin SMA IT
+              </p>
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
           >
             <div>
               <img src="./image/photo2 1.png" alt="" />
             </div>
             <div class="w-full px-2">
-              <p class="text-xs text-slate-700 mt-5">13 December 2023</p>
-              <p class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg">
+              <p class="text-xs text-slate-700 mt-5 dark:text-gray-50">
+                13 December 2023
+              </p>
+              <p
+                class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg dark:text-gray-200"
+              >
                 Pendaftaran SMA IT HSI - IDN Telah Dibuka !
               </p>
-              <p class="text-xs text-slate-700 mt-2">By Admin SMA IT</p>
+              <p class="text-xs text-slate-700 mt-2 dark:text-gray-50">
+                By Admin SMA IT
+              </p>
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
           >
             <div class="w-full"><img src="./image/photo3 1.png" alt="" /></div>
             <div class="w-full px-2">
-              <p class="text-xs text-slate-700 mt-5">13 December 2023</p>
-              <p class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg">
+              <p class="text-xs text-slate-700 mt-5 dark:text-gray-50">
+                13 December 2023
+              </p>
+              <p
+                class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg dark:text-gray-200"
+              >
                 Pendaftaran SMA IT HSI - IDN Telah Dibuka !
               </p>
-              <p class="text-xs text-slate-700 mt-2">By Admin SMA IT</p>
+              <p class="text-xs text-slate-700 mt-2 dark:text-gray-50">
+                By Admin SMA IT
+              </p>
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
           >
             <div class="w-full"><img src="./image/photo4 1.png" alt="" /></div>
             <div class="w-full px-2">
-              <p class="text-xs text-slate-700 mt-5">13 December 2023</p>
-              <p class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg">
+              <p class="text-xs text-slate-700 mt-5 dark:text-gray-50">
+                13 December 2023
+              </p>
+              <p
+                class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg dark:text-gray-200"
+              >
                 Pendaftaran SMA IT HSI - IDN Telah Dibuka !
               </p>
-              <p class="text-xs text-slate-700 mt-2">By Admin SMA IT</p>
+              <p class="text-xs text-slate-700 mt-2 dark:text-gray-50">
+                By Admin SMA IT
+              </p>
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
           >
             <div class="w-full"><img src="./image/photo6.png" alt="" /></div>
             <div class="w-full px-2">
-              <p class="text-xs text-slate-700 mt-5">13 December 2023</p>
-              <p class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg">
+              <p class="text-xs text-slate-700 mt-5 dark:text-gray-50">
+                13 December 2023
+              </p>
+              <p
+                class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg dark:text-gray-200"
+              >
                 Pendaftaran SMA IT HSI - IDN Telah Dibuka !
               </p>
-              <p class="text-xs text-slate-700 mt-2">By Admin SMA IT</p>
+              <p class="text-xs text-slate-700 mt-2 dark:text-gray-50">
+                By Admin SMA IT
+              </p>
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
           >
             <div class="w-full"><img src="./image/photo7.png" alt="" /></div>
             <div class="w-full px-2">
-              <p class="text-xs text-slate-700 mt-5">13 December 2023</p>
-              <p class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg">
+              <p class="text-xs text-slate-700 mt-5 dark:text-gray-50">
+                13 December 2023
+              </p>
+              <p
+                class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg dark:text-gray-200"
+              >
                 Pendaftaran SMA IT HSI - IDN Telah Dibuka !
               </p>
-              <p class="text-xs text-slate-700 mt-2">By Admin SMA IT</p>
+              <p class="text-xs text-slate-700 mt-2 dark:text-gray-50">
+                By Admin SMA IT
+              </p>
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
           >
             <div class="w-full"><img src="./image/photo8.png" alt="" /></div>
             <div class="w-full px-2">
-              <p class="text-xs text-slate-700 mt-5">13 December 2023</p>
-              <p class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg">
+              <p class="text-xs text-slate-700 mt-5 dark:text-gray-50">
+                13 December 2023
+              </p>
+              <p
+                class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg dark:text-gray-200"
+              >
                 Pendaftaran SMA IT HSI - IDN Telah Dibuka !
               </p>
-              <p class="text-xs text-slate-700 mt-2">By Admin SMA IT</p>
+              <p class="text-xs text-slate-700 mt-2 dark:text-gray-50">
+                By Admin SMA IT
+              </p>
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
           >
             <div class="w-full"><img src="./image/photo1.png" alt="" /></div>
             <div class="w-full px-2">
-              <p class="text-xs text-slate-700 mt-5">13 December 2023</p>
-              <p class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg">
+              <p class="text-xs text-slate-700 mt-5 dark:text-gray-50">
+                13 December 2023
+              </p>
+              <p
+                class="font-semibold text-sm text-slate-800 mt-2 lg:text-lg dark:text-gray-200"
+              >
                 Pendaftaran SMA IT HSI - IDN Telah Dibuka !
               </p>
-              <p class="text-xs text-slate-700 mt-2">By Admin SMA IT</p>
+              <p class="text-xs text-slate-700 mt-2 dark:text-gray-50">
+                By Admin SMA IT
+              </p>
             </div>
           </div>
         </div>
@@ -648,7 +741,7 @@
     </section>
 
     <!-- DOKUMENTASI -->
-    <section class="w-full mt-16 bg-[#362FD9]">
+    <section id="dokumentasi" class="w-full mt-16 bg-[#362FD9]">
       <div class="container flex flex-col mx-auto p-4 items-center pb-14">
         <h3
           class="text-xl text-center md:text-3xl md:w-[537px] font-bold text-white mt-10"
@@ -660,7 +753,7 @@
             class="flex items-end w-[218px] h-[290px] lg:w-[318px] lg:h-[384px] bg-[url('./../image/doc1.png')] bg-center bg-cover bg-no-repeat"
           >
             <div
-              class="h-[90px] lg:h-[130px] p-3 w-full backdrop-blur bg-[#ffffff80]"
+              class="h-[100px] lg:h-[130px] p-3 w-full backdrop-blur bg-[#ffffff80]"
             >
               <p class="font-bold text-sm lg:text-lg lg:w-[231px]">
                 Lomba Voli Air 17 Agustus 2024
@@ -674,7 +767,7 @@
             class="flex items-end w-[218px] h-[290px] lg:w-[318px] lg:h-[384px] bg-[url('./../image/doc2.png')] bg-center bg-cover bg-no-repeat"
           >
             <div
-              class="h-[90px] lg:h-[130px] p-3 w-full backdrop-blur bg-[#ffffff80]"
+              class="h-[100px] lg:h-[130px] p-3 w-full backdrop-blur bg-[#ffffff80]"
             >
               <p class="font-bold text-sm lg:text-lg lg:w-[231px]">
                 PSB Tahun Ajaran 2024 - 2025
@@ -688,7 +781,7 @@
             class="flex items-end w-[218px] h-[290px] lg:w-[318px] lg:h-[384px] bg-[url('./../image/doc3.png')] bg-center bg-cover bg-no-repeat"
           >
             <div
-              class="h-[90px] lg:h-[130px] p-3 w-full backdrop-blur bg-[#ffffff80]"
+              class="h-[100px] lg:h-[130px] p-3 w-full backdrop-blur bg-[#ffffff80]"
             >
               <p class="font-bold text-sm lg:text-lg lg:w-[231px]">
                 Devfest Jogjakarta 2023 UKDW
@@ -703,7 +796,7 @@
     </section>
 
     <!-- ALUMNI -->
-    <section class="w-full mt-14">
+    <section id="alumni" class="w-full mt-14">
       <div class="container mx-auto p-4 flex flex-col">
         <div class="flex flex-col items-center">
           <h3
@@ -777,50 +870,47 @@
       </div>
     </section>
 
-    <script>
-      var sideBar = document.querySelector("aside");
-      var callAdmin = document.getElementById("call-admin");
-      var wa = document.getElementById("whatsaap");
+    <!-- FOOTER -->
+    <footer class="w-full mt-16 bg-[#362FD9]">
+      <div
+        class="container mx-auto p-4 flex flex-col md:flex-row md:justify-between"
+      >
+        <div class="flex flex-col">
+          <div class="flex flex-col gap-2">
+            <div class="w-12 h-12">
+              <img src="./image/logo-idn 1.png" alt="" />
+            </div>
+            <p class="text-[10px] lg:text-sm text-[#E1E1E1] mt-2 md:w-[371px]">
+              sekolah adalah tempat mencetak penerus bangsa yang berkualitas dan
+              berprestasi di segala bidang yang dapat bersaing di dunia
+              internasional
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:justify-center md:items-end">
+          <div class="flex items-center gap-3 mt-4">
+            <div class="w-5 h-5 lg:w-10 lg:h-10">
+              <img src="./image/youtube-white.png" alt="" />
+            </div>
+            <div class="w-5 h-5 lg:w-10 lg:h-10">
+              <img src="./image/instagram-white.png" alt="" />
+            </div>
+            <div class="w-4 h-4 lg:w-9 lg:h-9">
+              <img src="./image/facebook-white.png" alt="" />
+            </div>
+          </div>
+          <div class="flex flex-col mt-3 lg:mt-3 md:text-right">
+            <p class="text-xs text-[#E1E1E1] font-medium lg:text-[14px]">
+              Dibuat Oleh SMA IT HSI - IDN
+            </p>
+            <p class="text-xs text-[#E1E1E1] font-medium lg:text-[14px]">
+              Menggunakan Tailwind css dan Js. @2024
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-      function openNavbar() {
-        sideBar.classList.add("translate-x-0");
-        sideBar.classList.remove("-translate-x-full");
-      }
-      function closeNavbar() {
-        sideBar.classList.add("-translate-x-full");
-        sideBar.classList.remove("translate-x-0");
-      }
-
-      wa.addEventListener("mouseenter", function () {
-        callAdmin.classList.add("opacity-100");
-        callAdmin.classList.remove("opacity-0");
-      });
-      wa.addEventListener("mouseleave", function () {
-        callAdmin.classList.add("opacity-0");
-        callAdmin.classList.remove("opacity-100");
-      });
-
-      var checkbox = document.querySelector("#toggle");
-      var checkboxMobile = document.querySelector("#toggle-mobile");
-
-      checkbox.addEventListener("click", function () {
-        if (checkbox.checked) {
-          document.documentElement.classList.add("dark");
-          localStorage.theme = "dark";
-        } else {
-          document.documentElement.classList.remove("dark");
-          localStorage.theme = "light";
-        }
-      });
-      checkboxMobile.addEventListener("click", function () {
-        if (checkboxMobile.checked) {
-          document.documentElement.classList.add("dark");
-          localStorage.theme = "dark";
-        } else {
-          document.documentElement.classList.remove("dark");
-          localStorage.theme = "light";
-        }
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
