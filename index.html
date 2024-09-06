@@ -13,9 +13,9 @@
     <link href="./src/output.css" rel="stylesheet" />
     <link href="./image/logo-idn 1.png" rel="icon" />
     <style>
-      html {
+      /* html {
         scroll-behavior: smooth;
-      }
+      } */
 
       * {
         font-family: poppins;
@@ -30,17 +30,18 @@
         </div>
         <div class="hidden lg:block">
           <ul class="flex gap-9 text-slate-600 dark:text-slate-50">
-            <li>
+            <li class="hover:text-blue-500">
               <a href="#home">Beranda</a>
             </li>
-            <li>
+            <li class="hover:text-blue-500">
               <a href="#about">Tentang kami</a>
             </li>
-            <li><a href="#jurusan">Jurusan</a></li>
-            <li><a href="#ekskul">Ekskul</a></li>
-            <li><a href="#berita">Berita</a></li>
-            <li><a href="#dokumentasi">Dokumentasi</a></li>
-            <li><a href="#alumni">Alumni</a></li>
+            <li class="hover:text-blue-500"><a href="#jurusan">Jurusan</a></li>
+            <li class="hover:text-blue-500"><a href="#ekskul">Ekskul</a></li>
+            <li class="hover:text-blue-500"><a href="#berita">Berita</a></li>
+            <li class="hover:text-blue-500">
+              <a href="#dokumentasi">Dokumentasi</a>
+            </li>
           </ul>
         </div>
         <div
@@ -63,7 +64,7 @@
           <label
             for="toggle"
             class="relative flex h-6 w-11 cursor-pointer items-center rounded-full bg-gray-400 px-0.5 outline-gray-400 transition-colors before:h-5 before:w-5 before:rounded-full before:bg-white before:shadow before:transition-transform before:duration-300 peer-checked:bg-blue-600 peer-checked:before:translate-x-full peer-focus-visible:outline peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gray-400 peer-checked:peer-focus-visible:outline-blue-700"
-            for="toggle "
+            for="toggle"
           >
             <span class="sr-only">Enable</span>
           </label>
@@ -73,34 +74,31 @@
     <div class="flex flex-col">
       <div
         id="qr-code"
-        class="bg-[#3B82F6] fixed z-30 bottom-8 lg:bottom-24 right-6 lg:right-6 w-[170px] h-[170px] p-4 flex flex-col items-center transition-all duration-700 ease-in-out opacity-0"
+        class="hidden bg-[#3B82F6] fixed z-30 bottom-8 lg:bottom-20 right-6 lg:right-4 w-[150px] h-[150px] p-4 lg:flex flex-col items-center transition-all duration-700 ease-in-out opacity-0 delay-500"
       >
         <div
-          class="w-[150px] h-[150px] fixed z-30 bottom-8 lg:bottom-[105px] right-6 lg:right-[33px]"
+          class="w-[130px] h-[130px] fixed z-30 bottom-8 lg:bottom-[89px] right-6 lg:right-[25px]"
         >
           <img src="./image/qrcode.png" alt="" />
         </div>
-        <div class="fixed z-30 bottom-8 lg:bottom-20 right-6 lg:right-11">
+        <div class="fixed z-30 bottom-8 lg:bottom-16 right-5 lg:right-9">
           <img src="./image/ph_triangle-fill (1).png" alt="" />
         </div>
       </div>
       <div
         id="call-admin"
-        class="opacity-0 fixed z-30 bottom-8 lg:bottom-6 right-6 lg:right-[100px] w-40 h-9 bg-blue-500 rounded-xl flex justify-center items-center transition-all duration-200 ease-in-out"
+        class="opacity-0 fixed z-30 bottom-8 lg:bottom-6 right-6 lg:right-[84px] w-40 h-9 bg-blue-500 rounded-xl flex justify-center items-center transition-all duration-200 ease-in-out"
       >
         <p class="text-xs font-semibold text-white">Chat Admin Now !</p>
-        <div class="fixed z-30 bottom-8 lg:bottom-8 right-6 lg:right-[84px]">
+        <div class="fixed z-30 bottom-8 lg:bottom-8 right-6 lg:right-[68px]">
           <img src="./image/ph_triangle-fright.png" alt="" />
         </div>
       </div>
       <div
         id="whatsaap"
-        class="fixed z-40 bottom-11 lg:bottom-5 right-7 w-7 h-7 lg:w-14 lg:h-14 cursor-pointer"
+        class="fixed z-40 bottom-5 lg:bottom-5 right-5 w-7 h-7 lg:w-10 lg:h-10 cursor-pointer"
       >
-        <a
-          href="https://api.whatsapp.com/send/?phone=085895080043&text&type=phone_number&app_absent=0"
-          target="_blank"
-        >
+        <a href="https://wa.me/085895080043" target="_blank">
           <img src="./image/logos_whatsapp-icon.png" alt="" />
         </a>
       </div>
@@ -108,7 +106,7 @@
 
     <!-- NAV MOBILE -->
     <aside
-      class="fixed z-50 w-full h-full -translate-x-full bg-[#00000081] transition-all duration-200 ease-in-out"
+      class="fixed z-30 -translate-x-full w-full h-full bg-[#00000081] transition-all duration-200 ease-in-out"
     >
       <div class="container w-72 h-full bg-white dark:bg-gray-950">
         <div class="flex flex-col p-2 relative">
@@ -133,18 +131,19 @@
           <ul
             class="mt-28 flex flex-col gap-7 text-left ml-5 text-slate-500 font-semibold dark:text-gray-200"
           >
-            <li>
+            <li class="hover:text-blue-500">
               <a href="#home">Beranda</a>
             </li>
-            <li>
+            <li class="hover:text-blue-500">
               <a href="#about">Tentang kami</a>
             </li>
-            <li><a href="#jurusan">Jurusan</a></li>
-            <li><a href="#ekskul">Ekskul</a></li>
-            <li><a href="#berita">Berita</a></li>
-            <li><a href="#dokumentasi">Dokumentasi</a></li>
-            <li><a href="#alumni">Alumni</a></li>
-            <li>
+            <li class="hover:text-blue-500"><a href="#jurusan">Jurusan</a></li>
+            <li class="hover:text-blue-500"><a href="#ekskul">Ekskul</a></li>
+            <li class="hover:text-blue-500"><a href="#berita">Berita</a></li>
+            <li class="hover:text-blue-500">
+              <a href="#dokumentasi">Dokumentasi</a>
+            </li>
+            <li class="hover:text-blue-500">
               <input
                 type="checkbox"
                 class="peer sr-only opacity-0"
@@ -218,7 +217,7 @@
             internasional
           </p>
           <button
-            class="mx-auto md:mx-0 bg-[#362FD9] text-white w-24 h-10 lg:w-[147px] lg:h-[48px] mt-6 md:mt-8 rounded-full shadow-xl"
+            class="mx-auto md:mx-0 bg-[#362FD9] hover:bg-blue-900 text-white w-24 h-10 lg:w-[147px] lg:h-[48px] mt-6 md:mt-8 rounded-full shadow-xl"
           >
             <a class="text-xs lg:text-sm" href="">Video</a>
           </button>
@@ -379,7 +378,7 @@
               melengkapi pembelajarannya di sekolah
             </p>
             <button
-              class="md:mx-0 bg-[#362FD9] text-white w-24 h-10 lg:w-[147px] lg:h-[48px] mt-6 md:mt-8 rounded-full shadow-xl"
+              class="md:mx-0 bg-[#362FD9] hover:bg-blue-900 text-white w-24 h-10 lg:w-[147px] lg:h-[48px] mt-6 md:mt-8 rounded-full shadow-xl"
             >
               <a class="text-xs lg:text-sm" href="">Video</a>
             </button>
@@ -586,7 +585,7 @@
         </div>
         <div class="flex flex-wrap justify-center gap-4 mt-8">
           <div
-            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white hover:bg-gray-300 hover:-translate-y-1 transition-all duration-200 ease-in-out rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
           >
             <div class="w-full"><img src="./image/photo1.png" alt="" /></div>
             <div class="w-full px-2">
@@ -604,7 +603,7 @@
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white hover:bg-gray-300 hover:-translate-y-1 transition-all duration-200 ease-in-out rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
           >
             <div>
               <img src="./image/photo2 1.png" alt="" />
@@ -624,7 +623,7 @@
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white hover:bg-gray-300 hover:-translate-y-1 transition-all duration-200 ease-in-out rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
           >
             <div class="w-full"><img src="./image/photo3 1.png" alt="" /></div>
             <div class="w-full px-2">
@@ -642,7 +641,7 @@
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white hover:bg-gray-300 hover:-translate-y-1 transition-all duration-200 ease-in-out rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
           >
             <div class="w-full"><img src="./image/photo4 1.png" alt="" /></div>
             <div class="w-full px-2">
@@ -660,7 +659,7 @@
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white hover:bg-gray-300 hover:-translate-y-1 transition-all duration-200 ease-in-out rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
           >
             <div class="w-full"><img src="./image/photo6.png" alt="" /></div>
             <div class="w-full px-2">
@@ -678,7 +677,7 @@
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white hover:bg-gray-300 hover:-translate-y-1 transition-all duration-200 ease-in-out rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
           >
             <div class="w-full"><img src="./image/photo7.png" alt="" /></div>
             <div class="w-full px-2">
@@ -696,7 +695,7 @@
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white hover:bg-gray-300 hover:-translate-y-1 transition-all duration-200 ease-in-out rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
           >
             <div class="w-full"><img src="./image/photo8.png" alt="" /></div>
             <div class="w-full px-2">
@@ -714,7 +713,7 @@
             </div>
           </div>
           <div
-            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
+            class="w-[187px] h-[232px] lg:w-[257px] lg:h-[302px] flex flex-col bg-white hover:bg-gray-300 hover:-translate-y-1 transition-all duration-200 ease-in-out rounded-lg drop-shadow-xl overflow-hidden dark:dark:bg-gray-900"
           >
             <div class="w-full"><img src="./image/photo1.png" alt="" /></div>
             <div class="w-full px-2">
@@ -733,7 +732,7 @@
           </div>
         </div>
         <button
-          class="mx-auto md:mx-0 bg-[#362FD9] text-white w-32 h-8 lg:w-[147px] lg:h-[48px] mt-6 md:mt-8 rounded-full shadow-xl"
+          class="mx-auto md:mx-0 bg-[#362FD9] hover:bg-blue-900 text-white w-32 h-8 lg:w-[147px] lg:h-[48px] mt-6 md:mt-8 rounded-full shadow-xl"
         >
           <a class="text-xs lg:text-sm" href="">Semua Berita</a>
         </button>
@@ -795,77 +794,135 @@
       </div>
     </section>
 
-    <!-- ALUMNI -->
-    <section id="alumni" class="w-full mt-14">
-      <div class="container mx-auto p-4 flex flex-col">
-        <div class="flex flex-col items-center">
-          <h3
-            class="text-xl text-center md:text-3xl md:w-[537px] font-bold text-slate-800 dark:text-gray-50"
-          >
-            Profil Alumni SMA IT
-            <span class="text-[#362FD9]">HSI - IDN</span> PURWOREJO
-          </h3>
-          <p class="text-xs lg:text-lg text-slate-700 mt-5 dark:text-gray-200">
-            Profil Alumni SMA IT HSI - IDN PURWOREJO
-          </p>
+    <!-- FAQS -->
+    <section class="w-full mt-16">
+      <div
+        class="container mx-auto p-4 flex flex-col justify-center md:flex-row md:items-center md:justify-center"
+      >
+        <div>
+          <img src="./image/calendar.png" alt="" />
         </div>
-        <div
-          class="flex flex-wrap lg:gap-4 items-center justify-center md:justify-evenly"
-        >
-          <div class="flex justify-center mt-7">
-            <div class="flex gap-2 lg:gap-4">
-              <div class="w-[108px] h-[180px] lg:w-[148px] lg:h-[220px]">
-                <img src="./image/alumni1.png" alt="" />
+        <div>
+          <div>
+            <h3
+              class="text-xl md:text-4xl md:w-[537px] font-bold text-center text-slate-800 dark:text-slate-50"
+            >
+              AGENDA PSB ONLINE
+            </h3>
+            <p
+              class="text-xs text-center lg:text-lg text-slate-700 mt-5 dark:text-gray-200"
+            >
+              Berikut ini adalah rincian waktu proses Penerimaan Santri Baru
+            </p>
+          </div>
+
+          <label for="check">
+            <div
+              id="faqs"
+              class="flex flex-col bg-[#362FD9] p-3 rounded cursor-pointer mt-5"
+            >
+              <div class="flex flex-col">
+                <div class="flex items-center">
+                  <input type="checkbox" id="check" class="peer hidden" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="#ffffff"
+                    viewBox="0 0 256 256"
+                    class="peer-checked:rotate-180 transition-all duration-100 ease-in-out"
+                  >
+                    <path
+                      d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"
+                    ></path>
+                  </svg>
+                  <p class="text-sm lg:text-lg text-white ml-5">
+                    Waktu Pendaftaran
+                  </p>
+                </div>
+                <div id="info" class="p-4 md:p-2 hidden">
+                  <p class="text-xs text-gray-200 md:w-80">
+                    Mohon tunggu informasi seputar PSB SMA IT HSI - IDN
+                    PURWOREJO yg terbaru yaa
+                  </p>
+                </div>
               </div>
-              <div class="w-[180px] lg:w-[220px] flex flex-col lg:mt-2">
-                <p
-                  class="text-lg sm:text-xl font-semibold lg:text-2xl lg:w-[207px] lg:font-bold text-slate-700 dark:text-gray-200"
-                >
-                  Yazid Doang
-                </p>
-                <p
-                  class="text-xs sm:text-sm text-slate-700 mt-1 lg:mt-2 dark:text-gray-200"
-                >
-                  Angkatan 2008
-                </p>
-                <p class="text-xs lg:text-sm mt-2 lg:mt-4 dark:text-gray-200">
-                  Yazid adalah seorang ui ux yang berkerda di Inggris saat ini
-                  dia adalah salah satu alumni yang berprestasi.
-                </p>
-                <p class="text-xs text-blue-600 mt-2 lg:mt-3">
-                  Baca Selengkapnya
+            </div>
+          </label>
+          <label for="check2">
+            <div
+              id="faqs2"
+              class="flex flex-col bg-[#362FD9] p-3 rounded group cursor-pointer mt-5"
+            >
+              <div class="flex flex-col">
+                <div class="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="check2"
+                    class="check peer hidden"
+                  />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="#ffffff"
+                    viewBox="0 0 256 256"
+                    class="peer-checked:rotate-180 transition-all duration-100 ease-in-out"
+                  >
+                    <path
+                      d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"
+                    ></path>
+                  </svg>
+                  <p class="text-sm lg:text-lg text-white ml-5">
+                    Biaya Pendaftaran
+                  </p>
+                </div>
+                <div id="info2" class="p-4 md:p-2 hidden">
+                  <p class="text-xs text-gray-200 md:w-80">
+                    Mohon tunggu informasi seputar PSB SMA IT HSI - IDN
+                    PURWOREJO yg terbaru yaa
+                  </p>
+                </div>
+              </div>
+            </div>
+          </label>
+          <label for="check3">
+            <div
+              id="faqs3"
+              class="flex flex-col bg-[#362FD9] p-3 rounded cursor-pointer mt-5 group"
+            >
+              <div class="flex flex-col">
+                <div class="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="check3"
+                    class="check peer hidden"
+                  />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="#ffffff"
+                    viewBox="0 0 256 256"
+                    class="peer-checked:rotate-180 transition-all duration-100 ease-in-out"
+                  >
+                    <path
+                      d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"
+                    ></path>
+                  </svg>
+                  <p class="text-sm lg:text-lg text-white ml-5">
+                    Biaya Daftar Ulang
+                  </p>
+                </div>
+              </div>
+              <div id="info3" class="p-4 md:p-2 hidden">
+                <p class="text-xs text-gray-200 md:w-80">
+                  Mohon tunggu informasi seputar PSB SMA IT HSI - IDN PURWOREJO
+                  yg terbaru yaa
                 </p>
               </div>
             </div>
-          </div>
-          <div class="flex justify-center mt-5">
-            <div class="flex gap-2 lg:gap-4">
-              <div class="w-[108px] h-[180px] lg:w-[148px] lg:h-[220px]">
-                <img src="./image/alumni2.png" alt="" />
-              </div>
-              <div class="w-[180px] flex flex-col lg:mt-2">
-                <p
-                  class="text-lg sm:text-xl font-semibold lg:text-2xl lg:w-[207px] lg:font-bold text-slate-700 dark:text-gray-200"
-                >
-                  Maulana
-                </p>
-                <p
-                  class="text-sm text-slate-700 mt-1 lg:mt-2 dark:text-gray-200"
-                >
-                  Angkatan 2008
-                </p>
-                <p
-                  class="text-xs lg:text-sm mt-2 lg:mt-4 lg:w-[207px] dark:text-gray-200"
-                >
-                  Yazid adalah seorang ui ux yang berkerda di Inggris saat ini
-                  dia adalah salah satu alumni yang berprestasi.
-                </p>
-                <p class="text-xs text-blue-600 mt-2 lg:mt-3">
-                  Baca Selengkapnya
-                </p>
-              </div>
-            </div>
-          </div>
+          </label>
         </div>
       </div>
     </section>
