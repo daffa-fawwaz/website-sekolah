@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link href="./image/logo-idn 1.png" rel="icon" />
+    <title>Ekskul SMA HSI - IDN</title>
+    <style>
+      * {
+        font-family: "poppins";
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HOME -->
+    <nav class="w-full fixed z-30 bg-white dark:bg-gray-950">
+      <div class="container mx-auto p-4 flex justify-between items-center">
+        <div class="w-12 h-12">
+          <img src="./image/logo-idn 1.png" alt="" />
+        </div>
+        <div class="hidden lg:block">
+          <ul class="flex gap-9 text-slate-600 dark:text-slate-50">
+            <li class="nav-link active hover:text-blue-500">
+              <a href="index.html">Beranda</a>
+            </li>
+
+            <li class="nav-link hover:text-blue-500">
+              <a href="#">Tentang Kami</a>
+            </li>
+            <li class="nav-link hover:text-blue-500">
+              <a href="#jurusan">Jurusan</a>
+            </li>
+            <li class="nav-link hover:text-blue-500">
+              <a href="#ekskul">Ekskul</a>
+            </li>
+            <li class="nav-linkhover:text-blue-500">
+              <a href="#">Berita</a>
+            </li>
+            <li class="nav-link hover:text-blue-500">
+              <a href="#dokumentasi">Dokumentasi</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          onclick="openNavbar()"
+          class="lg:hidden cursor-pointer fill-black dark:fill-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+            ></path>
+          </svg>
+        </div>
+        <div class="hidden lg:block">
+          <input type="checkbox" class="peer sr-only opacity-0" id="toggle" />
+          <label
+            for="toggle"
+            class="relative flex h-6 w-11 cursor-pointer items-center rounded-full bg-gray-400 px-0.5 outline-gray-400 transition-colors before:h-5 before:w-5 before:rounded-full before:bg-white before:shadow before:transition-transform before:duration-300 peer-checked:bg-blue-600 peer-checked:before:translate-x-full peer-focus-visible:outline peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gray-400 peer-checked:peer-focus-visible:outline-blue-700"
+            for="toggle"
+          >
+            <span class="sr-only">Enable</span>
+          </label>
+        </div>
+      </div>
+    </nav>
+    <div class="flex flex-col">
+      <div
+        id="qr-code"
+        class="hidden bg-[#3B82F6] fixed z-30 bottom-8 lg:bottom-20 right-6 lg:right-4 w-[150px] h-[150px] p-4 lg:flex flex-col items-center transition-all duration-700 ease-in-out opacity-0 delay-500"
+      >
+        <div
+          class="w-[130px] h-[130px] fixed z-30 bottom-8 lg:bottom-[89px] right-6 lg:right-[25px]"
+        >
+          <img src="./image/qrcode.png" alt="" />
+        </div>
+        <div class="fixed z-30 bottom-8 lg:bottom-16 right-5 lg:right-9">
+          <img src="./image/ph_triangle-fill (1).png" alt="" />
+        </div>
+      </div>
+      <div
+        id="call-admin"
+        class="opacity-0 fixed z-30 bottom-8 lg:bottom-6 right-6 lg:right-[84px] w-40 h-9 bg-blue-500 rounded-xl flex justify-center items-center transition-all duration-200 ease-in-out"
+      >
+        <p class="text-xs font-semibold text-white">Chat Admin Now !</p>
+        <div class="fixed z-30 bottom-8 lg:bottom-8 right-6 lg:right-[68px]">
+          <img src="./image/ph_triangle-fright.png" alt="" />
+        </div>
+      </div>
+      <div
+        id="whatsaap"
+        class="fixed z-40 bottom-5 lg:bottom-5 right-5 w-7 h-7 lg:w-10 lg:h-10 cursor-pointer"
+      >
+        <a href="https://wa.me/085895080043" target="_blank">
+          <img src="./image/logos_whatsapp-icon.png" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <!-- NAV MOBILE -->
+    <aside
+      class="fixed z-30 -translate-x-full w-full h-full bg-[#00000081] transition-all duration-200 ease-in-out"
+    >
+      <div class="container w-72 h-full bg-white dark:bg-gray-950">
+        <div class="flex flex-col p-2 relative">
+          <div onclick="closeNavbar()" class="absolute cursor-pointer right-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 256 256"
+              class="fill-black dark:fill-white"
+            >
+              <path
+                d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="absolute left-2 mt-1">
+            <div class="w-11 h-11">
+              <img src="./image/logo-idn 1.png" alt="" />
+            </div>
+          </div>
+          <ul
+            class="mt-28 flex flex-col gap-7 text-left ml-5 text-slate-500 font-semibold dark:text-gray-200"
+          >
+            <li class="hover:text-blue-500">
+              <a href="index.html">Beranda</a>
+            </li>
+            <li class="hover:text-blue-500">
+              <a href="#about">Tentang kami</a>
+            </li>
+            <li class="hover:text-blue-500"><a href="#jurusan">Jurusan</a></li>
+            <li class="hover:text-blue-500"><a href="#ekskul">Ekskul</a></li>
+            <li class="hover:text-blue-500">
+              <a href="#">Berita</a>
+            </li>
+            <li class="hover:text-blue-500">
+              <a href="#dokumentasi">Dokumentasi</a>
+            </li>
+            <li class="hover:text-blue-500">
+              <input
+                type="checkbox"
+                class="peer sr-only opacity-0"
+                id="toggle-mobile"
+              />
+              <label
+                for="toggle-mobile"
+                class="relative flex h-6 w-11 cursor-pointer items-center rounded-full bg-gray-400 px-0.5 outline-gray-400 transition-colors before:h-5 before:w-5 before:rounded-full before:bg-white before:shadow before:transition-transform before:duration-300 peer-checked:bg-blue-600 peer-checked:before:translate-x-full peer-focus-visible:outline peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gray-400 peer-checked:peer-focus-visible:outline-blue-700"
+              >
+                <span class="sr-only">Enable</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>

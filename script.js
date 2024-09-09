@@ -70,7 +70,6 @@ var sideBar = document.querySelector("aside");
         document.getElementById("check3")
       ];
 
-
        
      
       faqs[0].addEventListener("click", function() {   

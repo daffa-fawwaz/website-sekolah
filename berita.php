@@ -57,6 +57,7 @@
         </div>
       </div>
     </nav>
+
     <!-- NAV MOBILE -->
     <aside
       class="fixed z-30 -translate-x-full w-full h-full bg-[#00000081] transition-all duration-200 ease-in-out"
@@ -121,11 +122,14 @@
         class="container mx-auto p-4 flex flex-col lg:flex-row lg:justify-evenly"
       >
         <div class="lg:w-[65%]">
-          <p>Berita <span class="text-[#FAFF00]">></span> Liputan/Berita</p>
+          <p class="text-xs lg:text-lg text-slate-700 dark:text-gray-200">
+            Berita
+            <span class="text-[#FAFF00] font-bold">></span> Liputan/Berita
+          </p>
           <h3
-            class="text-xl md:text-4xl md:w-[537px] font-bold text-slate-800 dark:text-gray-50 mt-5"
+            class="text-xl md:text-4xl font-bold text-slate-800 dark:text-gray-50 mt-5"
           >
-            Lomba HUT Kemerdekaan RI Ke-79 Di SMA IT HSI - IDN
+            Lomba HUT Kemerdekaan RI Ke-79 Di SMA IT HSI - IDN PURWEREJO
           </h3>
           <div class="flex gap-4 items-center mt-4">
             <div class="flex items-center gap-2">
@@ -196,6 +200,16 @@
             >
               JUARA OLIMPIADE SAINS
             </p>
+            <p
+              class="bg-blue-200 px-2 py-1 text-sm cursor-pointer text-blue-700"
+            >
+              SEKOLAH RAMAH LINGKUNGAN
+            </p>
+            <p
+              class="bg-blue-200 px-2 py-1 text-sm cursor-pointer text-blue-700"
+            >
+              HSI - IDN GOES TO SINGAPORE
+            </p>
           </div>
         </div>
         <hr />
@@ -209,35 +223,43 @@
             </h3>
             <div class="flex flex-col mt-5 gap-7 lg:w-72">
               <div class="flex flex-col">
-                <p class="text-blue-800 font-medium">
+                <p class="text-blue-800 dark:text-blue-500 font-medium">
                   Santri SMA HSI - IDN mendapatkan Juara 1 Olimpiade Sains
                   internasional
                 </p>
-                <p class="text-sm text-slate-600 mt-1">6 September 2024</p>
+                <p class="text-sm text-slate-600 dark:text-slate-200 mt-1">
+                  6 September 2024
+                </p>
                 <hr class="mt-2 border-slate-500" />
               </div>
               <div class="flex flex-col">
-                <p class="text-blue-800 font-medium">
+                <p class="text-blue-800 dark:text-blue-500 font-medium">
                   Santri SMA HSI - IDN mendapatkan Juara 1 Olimpiade Sains
                   internasional
                 </p>
-                <p class="text-sm text-slate-600 mt-1">6 September 2024</p>
+                <p class="text-sm text-slate-600 dark:text-slate-200 mt-1">
+                  6 September 2024
+                </p>
                 <hr class="mt-2 border-slate-500" />
               </div>
               <div class="flex flex-col">
-                <p class="text-blue-800 font-medium">
+                <p class="text-blue-800 dark:text-blue-500 font-medium">
                   Santri SMA HSI - IDN mendapatkan Juara 1 Olimpiade Sains
                   internasional
                 </p>
-                <p class="text-sm text-slate-600 mt-1">6 September 2024</p>
+                <p class="text-sm text-slate-600 dark:text-slate-200 mt-1">
+                  6 September 2024
+                </p>
                 <hr class="mt-2 border-slate-500" />
               </div>
               <div class="flex flex-col">
-                <p class="text-blue-800 font-medium">
+                <p class="text-blue-800 dark:text-blue-500 font-medium">
                   Santri SMA HSI - IDN mendapatkan Juara 1 Olimpiade Sains
                   internasional
                 </p>
-                <p class="text-sm text-slate-600 mt-1">6 September 2024</p>
+                <p class="text-sm text-slate-600 dark:text-slate-200 mt-1">
+                  6 September 2024
+                </p>
                 <hr class="mt-2 border-slate-500" />
               </div>
             </div>
